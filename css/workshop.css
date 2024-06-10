@@ -1,0 +1,188 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family:Sans-serif;
+	
+}
+
+.main_menu
+{
+	display:flex;
+	justify-content:center;
+	margin-top:5px;
+}
+
+.main_menu_inside
+{
+	display:flex;
+	width:80%;
+	/* background:#cccccc; */
+	justify-content:space-between;
+	align-items:center;
+}
+.main_menu_inside img
+{
+	height:50px;
+	margin:0px;
+	padding:0px;
+}
+
+.main_menu_right
+{
+	display:flex;
+	/* background:yellow; */
+	justify-content:space-between;
+	align-items:center;
+}
+
+.main_content
+{
+	/* border:1px solid #cccccc; */
+	margin:20px auto;
+	width:80%;
+	min-height:450px;
+}
+
+.category_menu
+{
+	display:flex;
+	justify-content:center;
+	margin-top:5px;
+	background:#2b4156;
+}
+
+.category_menu_inside
+{
+	display:flex;
+	width:80%;
+	/* background:#cccccc; */
+	justify-content:left;
+	align-items:center;
+	
+}
+
+.category_menu_button
+{
+	text-decoration:none;
+	font-weight:bold;
+	padding:10px;
+	color:white;
+	font-size:16px;
+	/* padding-left:0px; */
+	text-align: center;
+}
+
+.menu_button
+{
+	text-decoration:none;
+	font-weight:bold;
+	margin-left:15px;
+	color:#3342d5;
+	font-size:16px;
+	padding:0px;
+	background:white;
+}
+
+.category_menu_button:HOVER
+{
+	color:#f07330;
+}
+
+.menu_button_logout
+{
+	text-decoration:none;
+	/* font-weight:bold; */
+	margin-left:15px;
+	color:blue;
+	font-size:16px;
+	border:1px solid black;
+	border-radius:5px;
+	padding:8px;
+}
+
+.category_menu_label
+{
+	text-decoration:none;
+	font-weight:bold;
+	padding:12px;
+	color:white;
+	font-size:18px;
+	text-align: center;
+	/* padding-left:0px; */
+}
+
+.topic
+{
+	text-decoration:none;
+	font-weight:bold;
+	margin-top:16px;
+	color:#3342d5;
+	font-size:16px;
+}
+
+.search_div
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:20%;
+}
+
+.search_box
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background:#cccccc;
+	border:1px solid white;
+	border-radius:5px;
+	color:black;
+	margin:0px;
+	width:80%;
+}
+
+.search_button
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background:blue;
+	border:1px solid white;
+	border-radius:5px;
+	color:yellow;
+	margin:0px;
+	text-align: center;
+}
+
+
+.form_div
+{
+	width:25%;
+	margin:30px auto;
+	
+}
+
+.input_box
+{
+	width:100%;
+	margin-bottom:10px;
+	padding:8px;
+	border:1px solid #cccccc;
+	border-radius:8px;
+	-webkit-box-sizing:border-box; /*ez a select miatt kellet, az nem border-ezik*/	
+}
+
+.err_box
+{
+	width:25%;
+	margin:0px auto;
+	color:red;
+	width:25%;
+	margin-bottom:8px auto;
+}
+
+.admin
+{
+	background:#cccccc;
+	padding:8px;
+	border-radius:5px;
+}

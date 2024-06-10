@@ -1,0 +1,16 @@
+﻿label_id;container_id;container_type;label_hun;label_eng
+1;reg_button;html;Regisztráció;Sign in
+2;login_button;html;Belépés;Login
+3;category_menu_label;html;KATEGÓRIÁK;MAIN BRANCHES
+4;search_topic;input;A keresett fogalom…;Topic to find…
+5;classroom;html;Osztályterem;Classroom
+6;school_work;html;Tananyagok;School work
+7;regname;input;Név…;Name….
+8;regemail;input;Email…;Email….
+9;regpass;input;Jelszó…;Password..
+10;regpass2;input;Jelszó ismét…;Password check..
+11;regphone;input;Mobilszám…;Phone number…
+12;regsubmit;submit;Regisztráció;Sign In
+13;loginemail;input;Email…;Email….
+14;loginpass;input;Jelszó…;Password..
+15;loginsubmit;submit;Belépés;Login

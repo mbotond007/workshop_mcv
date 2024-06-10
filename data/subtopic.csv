@@ -1,0 +1,68 @@
+﻿1;Egyenes vonalú mozgás;Rectilinear motion
+2;Egyenletes mozgás;Smooth motion
+3;Egyenletesen gyorsuló mozgás;Smoothly accelerating motion
+4;Egyenletes körmozgás;Smooth circular motion
+5;Gyorsuló körmozgás;Accelerating circular motion
+6;Harmonikus rezgőmozgás;Harmonic oscillatory motion
+7;Hajítás;Throw
+8;Bolygók mozgása;Planetary motion
+9;Newton 1. törvénye;Newton's 1st law
+10;Newton 2. törvénye;Newton's 2nd law
+11;Newton 3. törvénye;Newton's 3rd law
+12;Súrlódási erő;Friction force
+13;Közegellenállási erő;Medium resistance force
+14;Súly;Weight
+15;Tömegvonzási  erő;Gravity force
+16;Rugalmas erő;Flexible power
+17;Mechanikai munka;Mechanical work
+18;Konzervatív erők;Conservative forces
+19;Helyzeti energia;Potential energy
+20;Mozgási energia;Kinetic energy
+21;Rugalmas energia;Flexible energy
+22;Munkatétel;Work item
+23;Energia megmaradás;Energy conservation
+24;Lendület;Momentum
+25;Tömegpont rendszer;Point of mass system
+26;Lendölet megmaradás;Momentum conservation
+27;Ütközések;Collisions
+28;Forgatónyomaték;Torque
+29;Merev test egyensúlya;Rigid body balance
+30;Gyorsuló forgómozgás;Accelerating rotational motion
+31;Mechanikai hullámok;Mechanical waves
+32;Elektromágneses hullámok;Electromagnetic waves
+33;Sűrűség;Density
+34;Nyomás;Pressure
+35;Pascal törvény;Pascal Law
+36;Hidrosztatikai nyomás;Hydrostatic pressure
+37;Áramló közeg;Flowing medium
+38;Hőmérséklet;Temperature
+39;Hőtágulás;Expansion
+40;Hőcsere folyamatok;Heat exchange processes
+41;Hőkapacitás;Heat capacity
+42;Halmazállapot változások;Physical state changes
+43;Gáztörvények;Gas laws
+44;Gázok kinetikus modellje;Kinetic model of gases
+45;Belső energia;Internal energy
+46;A termodinamika 1. főtétele;Law 1 of thermodynamics
+47;A termodinamika 2. főtétele;Law 2 of thermodynamics
+48;Elektromos alapjelenségek;Basic electrical phenomena
+49;Coulomb törvény;Coulomb Law
+50;Elektrosztatikus tér;Electrostatic field
+51;Töltések vezetőn;Charging on a driver
+52;Elektomos áram;Electric current
+53;Gerjesztési törvény;Excitation law
+54;Elektromos indukció;Electrical induction
+55;Váltóáram;Alternating current
+56;Maxwell egyenletek;Maxwell equations
+57;A fény hullámtermészete;The wave nature of light
+58;A fény részecsketermészete;Particle nature of light
+59;Sugármenetek;Jet marches
+60;Leképező eszközök;Mapping tools
+61;Atommodellek;Atomic models
+62;Elektronhéj;Electron shell
+63;Az anyag kettős természete;The dual nature of matter
+64;Nukleáris energia;Nuclear energy
+65;Nukleáris reaktor;Nuclear reactor
+66;Speciális relativitás;Special relativity
+67;Kozmogónia;Cosmogony
+68;Naprendszer;Solar system

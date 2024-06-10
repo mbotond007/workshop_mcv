@@ -1,0 +1,11 @@
+﻿1;error;Ezzel az emailcímmel már regisztrált felhasználó!;A customer already signed in with this email!
+2;error;Név megadása kötelező!;Name required!
+3;error;Email megadása kötelező!;Email is required!
+4;error;Jelszó megadása kötelező!;Password required!
+5;error;A jelszó megerősítés nem egyezik az eredetivel;Password confirmation failed!
+6;feedback;Hiba az űrlap kitöltésében:;Error filling out the form:
+7;feedback;Az adatokat elmentettük, kérem lépjen be!;The data has been saved, please log in!
+8;feedback;Hiba az adatok mentésében!;Data saving failure!
+9;feedback;Sikertelen belépés az oldalra!;Access denied!
+10;feedback;Sikeres bejelentkezés!;Succesful login!
+11;feedback;Sikertelen bejelentkezés!;Login fgailed!
