@@ -26,6 +26,7 @@ body
 	height:50px;
 	margin:0px;
 	padding:0px;
+	cursor:pointer;
 }
 
 .main_menu_right
@@ -71,6 +72,7 @@ body
 	font-size:16px;
 	/* padding-left:0px; */
 	text-align: center;
+	cursor:pointer;
 }
 
 .menu_button
@@ -116,7 +118,7 @@ body
 {
 	text-decoration:none;
 	font-weight:bold;
-	margin-top:16px;
+	/* margin-top:8px; */
 	color:#3342d5;
 	font-size:16px;
 }

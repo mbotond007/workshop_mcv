@@ -30,13 +30,15 @@ if(isset($_GET["logout"]))
 			
 		<script type="text/javascript" src="jquery/jquery-ui-1.9.1.custom.js"></script>
 
-		<script type="text/javascript" src="js/container_content.js"></script>
+		<script type="text/javascript" src="js/static_content.js"></script>
 
-		<!-- <script type="text/javascript" src="js/category_changer.js"></script>
+		<script type="text/javascript" src="js/category_changer.js"></script>
+		
+		<script type="text/javascript" src="js/category_menu.js"></script>
 
 		<script type="text/javascript" src="js/lang_changer.js"></script>
 
-		<script type="text/javascript" src="js/show_category_topics.js"></script>
+		<!--<script type="text/javascript" src="js/show_category_topics.js"></script>
 
 		<script type="text/javascript" src="js/registry.js"></script>
 
