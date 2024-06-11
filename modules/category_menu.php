@@ -5,17 +5,14 @@ include("../connect.php");
 
 if(!isset($_POST["language"]))
 {
-	if(!isset($_SESSION["language"]))
-	{
-		$_SESSION["language"]="hun";
-	}
+	$act_lang="hun";
 }
 else
 {
-	$_SESSION["language"]=$_POST["language"];
+	$act_lang=$_POST["language"];
 }
 
-$result=$connection->query("select category_id, category_name_".$_SESSION["language"]." as 'category' from category");
+$result=$connection->query("select category_id, category_name_".$act_lang." as 'category' from category");
 
 $answer=array();
 
