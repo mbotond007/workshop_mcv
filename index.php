@@ -60,13 +60,14 @@ if(isset($_GET["logout"]))
 				<div class="main_menu_mid">
 					<img id="flag_hun" data-language="hun" class="flag" src="images/hu.gif">
 					<img id="flag_eng"  data-language="eng" class="flag" src="images/en.gif">
-					<div id="act_language"></div>
-					<div id="act_category"></div>
+					<div id="act_language"  style ="display: none"></div>
+					<div id="act_category"  style ="display: none"></div>
 				</div>
 
 				<div class="main_menu_right" id="main_menu_right">
-					<a href="#" class="menu_button" id="reg_button"></a>
-					<a href="#" class="menu_button" id="login_button"></a>				
+					<a class='menu_button_logout' href='index.php?logout=1'>Session_clear</a>
+					<div  class="menu_button" id="reg_button"></div>
+					<div  class="menu_button" id="login_button"></div>				
 				</div>
 				
 			</div>
