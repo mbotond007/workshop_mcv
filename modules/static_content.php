@@ -1,7 +1,9 @@
 <?php
 include("../connect.php");
 
-$result=$connection->query("select *  from containers");
+$act_lang=$_POST["language"];
+
+$result=$connection->query("select container_id, container_type, content_".$act_lang." as 'content'  from containers");
 
 $answer=array();
 

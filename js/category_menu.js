@@ -1,6 +1,5 @@
 function category_menu(language)
 {
-
     $.ajax(
         {
             url:"modules/category_menu.php" 
@@ -47,6 +46,5 @@ function list_categories(answer)
     if($("#act_category").html()!="")
         {
             $("#cat_"+$("#act_category").html()).addClass("search_button"); 
-
         }
 }

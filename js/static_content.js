@@ -8,39 +8,35 @@ function content_return(language)
             ,
             type:"POST" 
             ,
-            data:{}
+            data:{"language":language}
             ,
             success:function(answer)	
             {
-                $.each(answer, function(idx, item)
-                {
-                    if(language=="hun")
-                    {
-                       var content=item.content_hun;
-                    }
-                    else if(language=="eng")
-                    {
-                       var content=item.content_eng;
-                    }
-                    
-                    if(item.container_type=="html")
-                    {
-                        $("#"+item.container_id).html(content);
-                    }
-                    else if(item.container_type=="input")
-                    {
-                        $("#"+item.container_id).attr("placeholder", content);
-                    }
-                    else if(item.container_type=="img")
-                    {
-                        $("#"+item.container_id).attr("src", content);
-                    }
-                    else if(item.container_type=="submit")
-                    {
-                        $("#"+item.container_id).val(content);
-                    }
-                    
-                });
+               show_content(answer);
             }
         });
     }
+
+function show_content(answer)
+{
+    $.each(answer, function(idx, item)
+    {
+        if(item.container_type=="html")
+        {
+            $("#"+item.container_id).html(item.content);
+        }
+        else if(item.container_type=="input")
+        {
+            $("#"+item.container_id).attr("placeholder", item.content);
+        }
+        else if(item.container_type=="img")
+        {
+            $("#"+item.container_id).attr("src", item.content);
+        }
+        else if(item.container_type=="submit")
+        {
+            $("#"+item.container_id).val(item.content);
+        }
+        
+    });  
+}  

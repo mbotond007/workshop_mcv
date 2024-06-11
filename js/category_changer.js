@@ -1,24 +1,5 @@
 function topics_by_category(category,language)
 {
-    if(category)
-        {
-            var send_category={ "category_id":category } ;
-            
-        }
-        else
-        {
-            var send_category={};
-        }
-
-    if(language)
-        {
-            var send_language={ "language":language } ;
-            
-        }
-        else
-        {
-            var send_language={};
-        }
     $.ajax(
         {
             url:"modules/show_category_topics.php" 
@@ -42,6 +23,7 @@ function show_topics(answer)
     $("#topic_box").show();
     $("#content_box").empty();
     
+    // többnyelvűre bővítéskor figyelni,  be aware if implement multi-language!
     var act_language= $("#act_language").html();
     if(act_language=="hun")
         {
