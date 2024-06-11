@@ -33,8 +33,6 @@ function list_categories(answer)
         categ_obj.click(
             function()
             {
-                $("#act_category").hide()	
-
                 $("#act_category").html($(this).data("catid"));
 
                 $(".category_menu_button").removeClass("search_button");

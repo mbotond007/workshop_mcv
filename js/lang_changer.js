@@ -1,8 +1,6 @@
 $(document).ready(
     function()
     {
-        $("#act_language").hide();
-
         if($("#act_language").html()=="")
             {
                 $("#act_language").html("hun");
