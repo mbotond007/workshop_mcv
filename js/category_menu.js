@@ -39,7 +39,7 @@ function list_categories(answer)
        
                 $(this).addClass("search_button");        
                 
-                topics_by_category($(this).data("catid"));
+                topics_by_category($(this).data("catid"), $("#act_language").html());
             }
         );
     });
