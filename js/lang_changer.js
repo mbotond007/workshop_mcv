@@ -5,6 +5,10 @@ $(document).ready(
             {
                 $("#act_language").html("hun");
 
+                $("#flag_hun").addClass("signed");
+                
+                usermenu_load();
+
                 content_return( $("#act_language").html());
 
                 category_menu($("#act_language").html());
@@ -13,6 +17,10 @@ $(document).ready(
         $(".flag").click(
             function()
             {
+                $(".flag").removeClass("signed");
+
+                $(this).addClass("signed");
+
                 content_return( $(this).data("language"));
 
                 category_menu($(this).data("language"));

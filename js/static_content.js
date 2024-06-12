@@ -15,7 +15,7 @@ function content_return(language)
                show_content(answer);
             }
         });
-    }
+}
 
 function show_content(answer)
 {

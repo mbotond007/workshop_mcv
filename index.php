@@ -30,15 +30,28 @@ if(isset($_GET["logout"]))
 			
 		<script type="text/javascript" src="jquery/jquery-ui-1.9.1.custom.js"></script>
 
+		<script type="text/javascript" src="js/usercheck.js"></script>
+
+		<!-- <script type="text/javascript" src="js/test_login.js"></script> -->
+
 		<script type="text/javascript" src="js/static_content.js"></script>
 
 		<script type="text/javascript" src="js/category_changer.js"></script>
 		
 		<script type="text/javascript" src="js/category_menu.js"></script>
 
+		<script type="text/javascript" src="js/login_controller.js"></script>
+		
+		<script type="text/javascript" src="js/usermenu.js"></script>
+
 		<script type="text/javascript" src="js/lang_changer.js"></script>
 
-		<!--<script type="text/javascript" src="js/show_category_topics.js"></script>
+		
+
+		<!--
+		<script type="text/javascript" src="js/usercheck.js"></script>
+		
+		<script type="text/javascript" src="js/show_category_topics.js"></script>
 
 		<script type="text/javascript" src="js/registry.js"></script>
 
@@ -58,16 +71,15 @@ if(isset($_GET["logout"]))
 				</div>
 				
 				<div class="main_menu_mid">
-					<img id="flag_hun" data-language="hun" class="flag" src="images/hu.gif">
-					<img id="flag_eng"  data-language="eng" class="flag" src="images/en.gif">
+					<img id="flag_hun" data-language="hun" class="flag" style= "width:70px" src="images/hu.gif">
+					<img id="flag_eng"  data-language="eng" class="flag"  style= "width:70px" src="images/en.gif">
 					<div id="act_language"  style ="display: none"></div>
 					<div id="act_category"  style ="display: none"></div>
 				</div>
-
-				<div class="main_menu_right" id="main_menu_right">
-					<a class='menu_button_logout' href='index.php?logout=1'>Session_clear</a>
-					<div  class="menu_button" id="reg_button"></div>
-					<div  class="menu_button" id="login_button"></div>				
+				
+				<a class='menu_button_logout' href='index.php?logout=1'>Session_clear</a>
+				
+				<div class="main_menu_right" id="main_menu_right">							
 				</div>
 				
 			</div>
@@ -83,7 +95,7 @@ if(isset($_GET["logout"]))
 			<div class="search_div">
 				<form action="index.php" method="post">
 					<input class="search_box"  type="text" placeholder="" name="search_topic" id="search_topic">
-					<button class="search_button"  type="submit"><i class="fa fa-search"></i></button>
+					<!-- <button class="search_button check_login"  type="submit">check login</button> -->
 				</form>	
 			</div>
 		</div>

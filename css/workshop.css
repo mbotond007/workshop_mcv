@@ -37,6 +37,14 @@ body
 	align-items:center;
 }
 
+.usermenu
+{
+	display:flex;
+	/* background:yellow; */
+	justify-content:space-between;
+	align-items:center;
+}
+
 .main_content
 {
 	/* border:1px solid #cccccc; */
@@ -82,9 +90,11 @@ body
 	margin-left:15px;
 	color:#3342d5;
 	font-size:16px;
-	padding:0px;
+	padding:8px;
 	background:white;
 	cursor:pointer;
+	border:1px solid black;
+	border-radius:5px;
 }
 
 .category_menu_button:HOVER
@@ -191,3 +201,11 @@ body
 	padding:8px;
 	border-radius:5px;
 }
+
+.signed
+{
+	border:1px solid red;
+	border-radius:8px;
+	box-shadow: 5px 5px grey;
+}
+	
