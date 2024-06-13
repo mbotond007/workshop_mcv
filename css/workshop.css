@@ -3,7 +3,7 @@ body
 	margin:0px;
 	padding:0px;
 	font-family:Sans-serif;
-	
+	background:#ddedfc;
 }
 
 .main_menu
@@ -47,7 +47,7 @@ body
 
 .main_content
 {
-	border:1px solid #cccccc;
+	/* border:1px solid #cccccc; */
 	margin:20px auto;
 	margin-top: 0px;
 	/* width:80%; */
@@ -138,7 +138,7 @@ body
 	text-decoration:none;
 	font-weight:bold;
 	margin-top:8px;
-	color:#3342d5;
+	color:#1424b8;
 	font-size:16px;
 	cursor:pointer;
 	
@@ -156,7 +156,7 @@ body
 {
 	padding-top:5px;
 	padding-bottom:5px;
-	background:blue;
+	background:#0b6aee;
 	border:1px solid white;
 	border-radius:5px;
 	color:yellow;
@@ -169,10 +169,10 @@ body
 	display:flex;
 	flex-direction: column;
 	padding: 5px;
-	background:#cccccc;
+	background:#73abf9;
 	border:1px solid white;
 	border-radius:5px;
-	color:black;
+	color:darkblue;
 	margin:0px;
 	width:20%;
 	align-items:center;
@@ -182,7 +182,7 @@ body
 #search_topic
 {
 	background:#cccccc;
-	border:1px solid darkblue;
+	border:1px solid blue;
 	border-radius:5px;
 	width:90%;
 }

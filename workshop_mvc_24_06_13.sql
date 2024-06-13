@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Jún 13. 16:40
+-- Létrehozás ideje: 2024. Jún 13. 20:55
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -136,7 +136,8 @@ INSERT INTO `containers` (`content_id`, `container_id`, `container_type`, `conte
 (26, 'pass_short_error', 'html', 'A jelszó hossza minimum 6 karakter!', 'The password must be at least 6 characters long!'),
 (27, 'loginerror1', 'html', 'Ezzel az emailcímmel nem található felhasználó!', 'No user found with this email address!'),
 (28, 'loginerror2', 'html', 'A jelszó nem megfelelő!', 'The password is incorrect!'),
-(29, 'login_success', 'html', 'Sikeres belépés!', 'Successful login!');
+(29, 'login_success', 'html', 'Sikeres belépés!', 'Successful login!'),
+(30, 'search_button', 'html', 'Új keresés &nbsp;<i class=\"fa fa-search\"></i>', 'New search &nbsp;<i class=\"fa fa-search\"></i>');
 
 -- --------------------------------------------------------
 
@@ -210,35 +211,35 @@ CREATE TABLE `subtopic` (
 --
 
 INSERT INTO `subtopic` (`subtopic_id`, `subtopic_name_hun`, `subtopic_name_eng`) VALUES
-(1, 'Egyenes vonalú mozgás', 'Rectilinear motion'),
-(2, 'Egyenletes mozgás', 'Smooth motion'),
-(3, 'Egyenletesen gyorsuló mozgás', 'Smoothly accelerating motion'),
-(4, 'Egyenletes körmozgás', 'Smooth circular motion'),
+(1, 'Egyenes vonalú mozgás', 'Linear motion'),
+(2, 'Egyenletes mozgás', 'Uniform motion'),
+(3, 'Egyenletesen gyorsuló mozgás', 'Uniform accelerating motion'),
+(4, 'Egyenletes körmozgás', 'Uniform circular motion'),
 (5, 'Gyorsuló körmozgás', 'Accelerating circular motion'),
-(6, 'Harmonikus rezgőmozgás', 'Harmonic oscillatory motion'),
-(7, 'Hajítás', 'Throw'),
-(8, 'Bolygók mozgása', 'Planetary motion'),
+(6, 'Harmonikus rezgőmozgás', 'Harmonic oscillation'),
+(7, 'Hajítás', 'Projectile motion'),
+(8, 'Bolygók mozgása', 'Orbital motion'),
 (9, 'Newton 1. törvénye', 'Newton\'s 1st law'),
 (10, 'Newton 2. törvénye', 'Newton\'s 2nd law'),
 (11, 'Newton 3. törvénye', 'Newton\'s 3rd law'),
 (12, 'Súrlódási erő', 'Friction force'),
-(13, 'Közegellenállási erő', 'Medium resistance force'),
+(13, 'Közegellenállási erő', 'Fluid resistance'),
 (14, 'Súly', 'Weight'),
 (15, 'Tömegvonzási  erő', 'Gravity force'),
-(16, 'Rugalmas erő', 'Flexible power'),
+(16, 'Rugalmas erő', 'Elastic force'),
 (17, 'Mechanikai munka', 'Mechanical work'),
 (18, 'Konzervatív erők', 'Conservative forces'),
 (19, 'Helyzeti energia', 'Potential energy'),
 (20, 'Mozgási energia', 'Kinetic energy'),
-(21, 'Rugalmas energia', 'Flexible energy'),
-(22, 'Munkatétel', 'Work item'),
-(23, 'Energia megmaradás', 'Energy conservation'),
+(21, 'Rugalmas energia', 'Elastic potential energy'),
+(22, 'Munkatétel', 'Work and Energy'),
+(23, 'Energia megmaradás', 'Conservation of energy'),
 (24, 'Lendület', 'Momentum'),
 (25, 'Tömegpont rendszer', 'Point of mass system'),
-(26, 'Lendölet megmaradás', 'Momentum conservation'),
+(26, 'Lendület megmaradás', 'Conservation of momentum'),
 (27, 'Ütközések', 'Collisions'),
 (28, 'Forgatónyomaték', 'Torque'),
-(29, 'Merev test egyensúlya', 'Rigid body balance'),
+(29, 'Merev test egyensúlya', 'Rigid body equilibrium'),
 (30, 'Gyorsuló forgómozgás', 'Accelerating rotational motion'),
 (31, 'Mechanikai hullámok', 'Mechanical waves'),
 (32, 'Elektromágneses hullámok', 'Electromagnetic waves'),
@@ -248,8 +249,8 @@ INSERT INTO `subtopic` (`subtopic_id`, `subtopic_name_hun`, `subtopic_name_eng`)
 (36, 'Hidrosztatikai nyomás', 'Hydrostatic pressure'),
 (37, 'Áramló közeg', 'Flowing medium'),
 (38, 'Hőmérséklet', 'Temperature'),
-(39, 'Hőtágulás', 'Expansion'),
-(40, 'Hőcsere folyamatok', 'Heat exchange processes'),
+(39, 'Hőtágulás', 'Thermal expansion'),
+(40, 'Hőcsere folyamatok', 'Heat transfer'),
 (41, 'Hőkapacitás', 'Heat capacity'),
 (42, 'Halmazállapot változások', 'Physical state changes'),
 (43, 'Gáztörvények', 'Gas laws'),
@@ -260,24 +261,26 @@ INSERT INTO `subtopic` (`subtopic_id`, `subtopic_name_hun`, `subtopic_name_eng`)
 (48, 'Elektromos alapjelenségek', 'Basic electrical phenomena'),
 (49, 'Coulomb törvény', 'Coulomb Law'),
 (50, 'Elektrosztatikus tér', 'Electrostatic field'),
-(51, 'Töltések vezetőn', 'Charging on a driver'),
+(51, 'Töltések vezetőn', 'Electric charge on conductors'),
 (52, 'Elektomos áram', 'Electric current'),
 (53, 'Gerjesztési törvény', 'Excitation law'),
 (54, 'Elektromos indukció', 'Electrical induction'),
 (55, 'Váltóáram', 'Alternating current'),
-(56, 'Maxwell egyenletek', 'Maxwell equations'),
-(57, 'A fény hullámtermészete', 'The wave nature of light'),
-(58, 'A fény részecsketermészete', 'Particle nature of light'),
-(59, 'Sugármenetek', 'Jet marches'),
-(60, 'Leképező eszközök', 'Mapping tools'),
-(61, 'Atommodellek', 'Atomic models'),
-(62, 'Elektronhéj', 'Electron shell'),
-(63, 'Az anyag kettős természete', 'The dual nature of matter'),
-(64, 'Nukleáris energia', 'Nuclear energy'),
-(65, 'Nukleáris reaktor', 'Nuclear reactor'),
-(66, 'Speciális relativitás', 'Special relativity'),
-(67, 'Kozmogónia', 'Cosmogony'),
-(68, 'Naprendszer', 'Solar system');
+(56, 'Egyenáram', 'Direct current'),
+(57, 'Maxwell egyenletek', 'Maxwell equations'),
+(58, 'A fény hullámtermészete', 'The wave nature of light'),
+(59, 'A fény részecsketermészete', 'Particle nature of light'),
+(60, 'Sugármenetek', 'Light rays path'),
+(61, 'Leképező eszközök', 'Optical instruments'),
+(62, 'Atommodellek', 'Atomic models'),
+(63, 'Elektronhéj', 'Electron shell'),
+(64, 'Az anyag kettős természete', 'The dual nature of matter'),
+(65, 'Nukleáris energia', 'Nuclear energy'),
+(66, 'Nukleáris erőmű', 'Nuclear power plant'),
+(67, 'Energia termelés', 'Primary energy types'),
+(68, 'Speciális relativitás', 'Special relativity'),
+(69, 'Kozmogónia', 'Cosmogony'),
+(70, 'Naprendszer', 'Solar system');
 
 -- --------------------------------------------------------
 
@@ -405,7 +408,7 @@ ALTER TABLE `category_topic`
 -- AUTO_INCREMENT a táblához `containers`
 --
 ALTER TABLE `containers`
-  MODIFY `content_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `content_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT a táblához `customers`
@@ -423,7 +426,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT a táblához `subtopic`
 --
 ALTER TABLE `subtopic`
-  MODIFY `subtopic_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `subtopic_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT a táblához `topic`
