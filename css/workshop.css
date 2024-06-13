@@ -47,9 +47,10 @@ body
 
 .main_content
 {
-	/* border:1px solid #cccccc; */
+	border:1px solid #cccccc;
 	margin:20px auto;
-	width:80%;
+	margin-top: 0px;
+	/* width:80%; */
 	min-height:450px;
 }
 
@@ -126,14 +127,21 @@ body
 	/* padding-left:0px; */
 }
 
+.topic_box
+{
+	margin:20px auto;
+	width: 80%;
+}
+
 .topic
 {
 	text-decoration:none;
 	font-weight:bold;
-	/* margin-top:8px; */
+	margin-top:8px;
 	color:#3342d5;
 	font-size:16px;
 	cursor:pointer;
+	
 }
 
 .search_div
@@ -166,7 +174,7 @@ body
 	border-radius:5px;
 	color:black;
 	margin:0px;
-	width:30%;
+	width:20%;
 	align-items:center;
 	justify-content:center;
 	float: right;
@@ -185,7 +193,19 @@ body
 	
 	background:#cccccc;
 	border:1px solid darkblue;
+	width:90%;
 	border-radius:5px;
+}
+
+.one_result
+{
+	cursor: pointer;
+	padding: 3px;
+	border:1px solid darkblue;
+	border-radius:5px;
+	margin:4px;
+	font-size:12px;
+	color:#3342d5;
 }
 
 .form_div
