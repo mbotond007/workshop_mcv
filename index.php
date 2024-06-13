@@ -32,6 +32,10 @@ if(isset($_GET["logout"]))
 
 		<script type="text/javascript" src="js/usercheck.js"></script>
 
+		<script type="text/javascript" src="js/search_button.js"></script>
+
+		<script type="text/javascript" src="js/search_engine.js"></script>
+
 		<!-- <script type="text/javascript" src="js/test_login.js"></script> -->
 
 		<script type="text/javascript" src="js/static_content.js"></script>
@@ -94,10 +98,8 @@ if(isset($_GET["logout"]))
 
 			<div class="category_menu_inside" id="category_menu_inside"></div>
 
-			<div class="search_div">
-				<form action="index.php" method="post">
-					<input class="search_box"  type="text" placeholder="" name="search_topic" id="search_topic">
-					<!-- <button class="search_button check_login"  type="submit">check login</button> -->
+			<div class="search_div">				
+					<button class="search_button" id="search_button"><i class="fa fa-search"></i></button>
 				</form>	
 			</div>
 		</div>

@@ -144,18 +144,6 @@ body
 	width:20%;
 }
 
-.search_box
-{
-	padding-top:5px;
-	padding-bottom:5px;
-	background:#cccccc;
-	border:1px solid white;
-	border-radius:5px;
-	color:black;
-	margin:0px;
-	width:80%;
-}
-
 .search_button
 {
 	padding-top:5px;
@@ -168,6 +156,37 @@ body
 	text-align: center;
 }
 
+.search_box
+{
+	display:flex;
+	flex-direction: column;
+	padding: 5px;
+	background:#cccccc;
+	border:1px solid white;
+	border-radius:5px;
+	color:black;
+	margin:0px;
+	width:30%;
+	align-items:center;
+	justify-content:center;
+	float: right;
+}
+#search_topic
+{
+	background:#cccccc;
+	border:1px solid darkblue;
+	border-radius:5px;
+	width:90%;
+}
+
+
+.search_result
+{
+	
+	background:#cccccc;
+	border:1px solid darkblue;
+	border-radius:5px;
+}
 
 .form_div
 {
@@ -188,10 +207,9 @@ body
 
 .err_box
 {
-	width:25%;
+	width:35%;
 	margin:0px auto;
 	color:red;
-	width:25%;
 	margin-bottom:8px auto;
 }
 

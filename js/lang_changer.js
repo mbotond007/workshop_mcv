@@ -21,7 +21,9 @@ $(document).ready(
 
                 $(this).addClass("signed");
 
-                content_return( $(this).data("language"));
+                $("#search_result").remove();
+
+                $("#search_topic").val("");
 
                 category_menu($(this).data("language"));
 
@@ -31,7 +33,8 @@ $(document).ready(
                 {
                     topics_by_category($("#act_category").html(), $("#act_language").html());
                 }
-                      
+                    
+                content_return( $(this).data("language"));
             }
         );
     });
