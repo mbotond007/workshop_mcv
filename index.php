@@ -99,7 +99,7 @@ if(isset($_GET["logout"]))
 			<div class="category_menu_inside" id="category_menu_inside"></div>
 
 			<div class="search_div">				
-					<button class="search_button" id="search_button"><i class="fa fa-search"></i></button>
+					<button class="search_button" id="search_button"></button>
 				</form>	
 			</div>
 		</div>

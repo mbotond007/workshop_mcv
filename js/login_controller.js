@@ -82,12 +82,12 @@ function login_validation(form)
                     
                     if(answer.login_error_1=="1")
                         {
-                            $("<DIV class='failure_box' id='loginerror1'></DIV>").appendTo( $("#content_box") );
+                            $("<DIV class='failure_box err_box' id='loginerror1'></DIV>").appendTo( $("#content_box") );
 							content_return( $("#act_language").html());
                         }
                     if(answer.login_error_2=="1")
                         {
-                            $("<DIV class='failure_box' id='loginerror2'></DIV>").appendTo( $("#content_box") );
+                            $("<DIV class='failure_box err_box' id='loginerror2'></DIV>").appendTo( $("#content_box") );
 							content_return( $("#act_language").html()); 
                         }
 					
@@ -97,7 +97,7 @@ function login_validation(form)
                     {
                         //alert("Belépve:"+answer.username);
                         $("#content_box").empty();
-						$("<DIV class='failure_box' id='login_success'></DIV>").appendTo( $("#content_box") );
+						$("<DIV class='failure_box err_box' id='login_success'></DIV>").appendTo( $("#content_box") );
                         usermenu_load();
                         
                     }   

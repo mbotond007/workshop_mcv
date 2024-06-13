@@ -212,7 +212,8 @@ body
 {
 	width:25%;
 	margin:30px auto;
-	
+	margin-bottom: 0px;
+	/* background: grey; */
 }
 
 .input_box
@@ -225,12 +226,24 @@ body
 	-webkit-box-sizing:border-box; /*ez a select miatt kellet, az nem border-ezik*/	
 }
 
+.login_button
+{
+	margin-top: 10px;
+	color:blue;
+	font-size:16px;
+	border:1px solid black;
+	border-radius:5px;
+	padding:8px;
+	cursor:pointer;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+}
+
 .err_box
 {
 	width:35%;
 	margin:0px auto;
-	color:red;
-	margin-bottom:8px auto;
 }
 
 .admin
@@ -250,7 +263,7 @@ body
 .failure_box
 {
 	padding: 3px;
-	margin-bottom:8px;
+	margin-top: 3px;
 	background:red;
 	color:white;
 }

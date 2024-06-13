@@ -9,5 +9,5 @@
     
 	<input type="text" id="regphone" name="regphone" class="input_box" data-must_fillout="false" data-field="phone" placeholder="Mobilszám...." >
 	
-	<button id="regsubmit" class='menu_button_logout'>Regisztráció</button>
+	<button id="regsubmit" class='login_button'>Regisztráció</button>
 </div>

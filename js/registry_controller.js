@@ -39,13 +39,13 @@ function regcheck(form)
 
     if(form.find("#regpass").val().length<=5)
         {
-            $("<DIV class='failure_box' id='pass_short_error'></DIV>").appendTo( $("#content_box") );
+            $("<DIV class='failure_box err_box' id='pass_short_error'></DIV>").appendTo( $("#content_box") );
 
             failure=true;
         }
     if (form.find("#regpass").val()!=form.find("#regpass2").val())
         {
-            $("<DIV class='failure_box' id='pass2_error'></DIV>").appendTo( $("#content_box") );
+            $("<DIV class='failure_box err_box' id='pass2_error'></DIV>").appendTo( $("#content_box") );
 
             failure=true;
         }
@@ -99,18 +99,18 @@ function registry_validation(form)
 					
                     if(answer.reg_error_1=="1")
                         {
-                            $("<DIV class='failure_box' id='regerror1'></DIV>").appendTo( $("#content_box") );
+                            $("<DIV class='failure_box err_box' id='regerror1'></DIV>").appendTo( $("#content_box") );
                         }
                     if(answer.reg_error_2=="1")
                         {
-                            $("<DIV class='failure_box' id='regerror2'></DIV>").appendTo( $("#content_box") );
+                            $("<DIV class='failure_box err_box' id='regerror2'></DIV>").appendTo( $("#content_box") );
                         }
                     if(answer.feedback=="ok")
                         {
                         
                         $("#content_box").empty();
 
-                        $("<DIV class='failure_box' id='registry_success'></DIV>").appendTo( $("#content_box") );
+                        $("<DIV class='failure_box err_box' id='registry_success'></DIV>").appendTo( $("#content_box") );
                         }
                        
                     content_return( $("#act_language").html()); 

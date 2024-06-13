@@ -3,5 +3,5 @@
 	
 	<input type="password" id="loginpass" name="loginpass" data-field="password" class="input_box" data-must_fillout="true" placeholder="Jelszó...">
 	            
-	<button id="loginsubmit" class='menu_button_logout'>Belépés</button>
+	<button id="loginsubmit" class='login_button'>Belépés</button>
 </div>
