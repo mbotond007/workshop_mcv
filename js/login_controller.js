@@ -42,11 +42,13 @@ function logincheck(form)
 		if( $(fields[i]).data("must_fillout") )
 			if( $(fields[i]).val().trim()=="" )
 			{
-				$("<DIV class='failure_box'>Kötelező kitölteni</DIV>").insertAfter($(fields[i]));
+				$("<DIV class='failure_box' id='must_fillout_error"+i+"'></DIV>").insertAfter($(fields[i]));
 				
 				failure=true;
 			}
 		}
+	content_return( $("#act_language").html());	
+
     return !failure;    
 }
 
@@ -76,10 +78,10 @@ function login_validation(form)
 				,
 				success:function( answer )
 				{
-					alert(answer.feedback);
+					//alert(answer.feedback);
                     if(answer.username)
                     {
-                        alert("Belépve:"+answer.username);
+                        //alert("Belépve:"+answer.username);
                         $("#content_box").empty();
                         usermenu_load();
                         

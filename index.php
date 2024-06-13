@@ -40,6 +40,8 @@ if(isset($_GET["logout"]))
 		
 		<script type="text/javascript" src="js/category_menu.js"></script>
 
+		<script type="text/javascript" src="js/registry_controller.js"></script>
+
 		<script type="text/javascript" src="js/login_controller.js"></script>
 		
 		<script type="text/javascript" src="js/usermenu.js"></script>

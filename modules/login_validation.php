@@ -5,9 +5,9 @@ include("../connect.php");
 
 $st=$connection->prepare("select * from customers where email=? and password=?");
 
-$pass_encrypted=md5(md5($_POST["loginpass"]));
+$pass_encrypted=md5(md5($_POST["password"]));
 
-$st->bind_param("ss", $_POST["loginemail"],$pass_encrypted);
+$st->bind_param("ss", $_POST["email"],$pass_encrypted);
 
 $st->execute();
 

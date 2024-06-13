@@ -179,7 +179,7 @@ body
 .input_box
 {
 	width:100%;
-	margin-bottom:10px;
+	margin-top:10px;
 	padding:8px;
 	border:1px solid #cccccc;
 	border-radius:8px;
@@ -209,3 +209,11 @@ body
 	box-shadow: 5px 5px grey;
 }
 	
+.failure_box
+{
+	padding: 3px;
+	margin-bottom:8px;
+	background:red;
+	color:white;
+}
+
