@@ -101,11 +101,11 @@ function registry_validation(form)
                         {
                             $("<DIV class='failure_box' id='regerror1'></DIV>").appendTo( $("#content_box") );
                         }
-                    else if(answer.reg_error_2=="1")
+                    if(answer.reg_error_2=="1")
                         {
                             $("<DIV class='failure_box' id='regerror2'></DIV>").appendTo( $("#content_box") );
                         }
-                    else if(answer.feedback=="ok")
+                    if(answer.feedback=="ok")
                         {
                         
                         $("#content_box").empty();
@@ -113,7 +113,7 @@ function registry_validation(form)
                         $("<DIV class='failure_box' id='registry_success'></DIV>").appendTo( $("#content_box") );
                         }
                        
-                    content_return( $("#act_language").html())  
+                    content_return( $("#act_language").html()); 
 				}
 			}
 		 );

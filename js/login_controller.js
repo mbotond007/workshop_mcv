@@ -79,10 +79,25 @@ function login_validation(form)
 				success:function( answer )
 				{
 					//alert(answer.feedback);
-                    if(answer.username)
+                    
+                    if(answer.login_error_1=="1")
+                        {
+                            $("<DIV class='failure_box' id='loginerror1'></DIV>").appendTo( $("#content_box") );
+							content_return( $("#act_language").html());
+                        }
+                    if(answer.login_error_2=="1")
+                        {
+                            $("<DIV class='failure_box' id='loginerror2'></DIV>").appendTo( $("#content_box") );
+							content_return( $("#act_language").html()); 
+                        }
+					
+					
+					
+					if(answer.username)
                     {
                         //alert("Belépve:"+answer.username);
                         $("#content_box").empty();
+						$("<DIV class='failure_box' id='login_success'></DIV>").appendTo( $("#content_box") );
                         usermenu_load();
                         
                     }   

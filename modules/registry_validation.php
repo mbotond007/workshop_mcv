@@ -2,7 +2,11 @@
 include("../connect.php");
 
 $regerror=array();
+
+$answer=array();
+
 $regerror["reg_error_1"]="0";
+
 $regerror["reg_error_2"]="0";
 
 $st=$connection->prepare("select * from customers where email=?");
@@ -54,19 +58,22 @@ if($regerror["reg_error_1"]!="1" and $regerror["reg_error_2"]!="1")
     if( $connection->query( $pcs ) )
 
     {
-        $answer=array();
         $answer["feedback"]="ok"; 
+        
+        //$regerror["reg_error_3"]="0";
     }
     else
     {
-        $answer=array();
         $answer["feedback"]=""; 
+
+        //$regerror["reg_error_3"]="1";        
     }
-
-    echo( json_encode( $answer ) );
-
 }
 else
 {
-    echo(json_encode( $regerror ));
+    $answer= $regerror;
 }
+
+echo( json_encode( $answer ) );
+
+?>
