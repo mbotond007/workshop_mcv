@@ -34,9 +34,9 @@ function list_categories(answer)
             {
                 $("#act_category").html($(this).data("catid"));
 
-                $(".category_menu_button").removeClass("search_button");
+                $(".category_menu_button").removeClass("search_button signed");
        
-                $(this).addClass("search_button");        
+                $(this).addClass("search_button signed");        
                 
                 topics_by_category($(this).data("catid"), $("#act_language").html());
             }
@@ -45,6 +45,6 @@ function list_categories(answer)
 
     if($("#act_category").html()!="")
         {
-            $("#cat_"+$("#act_category").html()).addClass("search_button"); 
+            $("#cat_"+$("#act_category").html()).addClass("search_button signed"); 
         }
 }

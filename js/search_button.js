@@ -4,7 +4,7 @@ $(document).ready(
         $("#search_button").click(
         function()
         {	
-            $(".category_menu_button").removeClass("search_button");
+            $(".category_menu_button").removeClass("search_button signed");
             $("#act_category").empty();
             $("#topic_box").empty();		
             $("#topic_box").hide();	

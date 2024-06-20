@@ -23,21 +23,12 @@ function show_topics(answer)
     $("#topic_box").show();
     $("#content_box").empty();
     
-    // többnyelvűre bővítéskor figyelni,  be aware if implement multi-language!
-    var act_language= $("#act_language").html();
-    if(act_language=="hun")
-        {
-            $("#topic_box").html('<div class="topic"> Témakörök a <span style="color:red">'+$("#cat_"+$("#act_category").html()).html()+
-            '</span> kategórián belül:</div><br>');
 
-        }
-    else if (act_language=="eng")
-        {
-            $("#topic_box").html('<div class="topic"> Chapters of  <span style="color:red">'+$("#cat_"+$("#act_category").html()).html()+
-            '</span> category:</div><br>');
+    $('<div class="topic_label"><div class="topic" style="cursor:default" id="topic_label1"></div> <div class="topic" style="color:red; cursor:default">'+$("#cat_"+$("#act_category").html()).html()+
+    '</div> <div class="topic" id="topic_label2" style="cursor:default"></div></div><br>').appendTo($("#topic_box"));
 
-        }
-    
+    content_return( $("#act_language").html()); 
+
     $.each(answer, function(idx, item)
     {
        
@@ -46,5 +37,5 @@ function show_topics(answer)
        
         
     });
-
+    
 }

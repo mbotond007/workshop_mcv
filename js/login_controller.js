@@ -5,7 +5,7 @@ function login()
 	{
 		var tempobj=$().add(temp_return);
 		
-        $(".category_menu_button").removeClass("search_button");
+        $(".category_menu_button").removeClass("search_button signed");
         $("#act_category").empty();
         $("#topic_box").empty();		
         $("#topic_box").hide();	
@@ -35,6 +35,8 @@ function logincheck(form)
 	
 	var fields=form.find(".input_box");
 	
+	//console.log(fields);
+
 	$(".failure_box").remove();
 	
 	for( var i=0; i<fields.length ; i++ )

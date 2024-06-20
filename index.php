@@ -1,4 +1,3 @@
-<!doctype html>
 <?php
 session_start();
 
@@ -9,8 +8,11 @@ if(isset($_GET["logout"]))
 		session_unset(); 
 	}
 
+// print_r($_SESSION);
+
 ?>
 
+<!doctype html>
 <html>
 	<head>
 		<title>
@@ -30,6 +32,8 @@ if(isset($_GET["logout"]))
 			
 		<script type="text/javascript" src="jquery/jquery-ui-1.9.1.custom.js"></script>
 
+		<script type="text/javascript" src="js/static_content.js"></script>
+		
 		<script type="text/javascript" src="js/usercheck.js"></script>
 
 		<script type="text/javascript" src="js/search_button.js"></script>
@@ -37,8 +41,6 @@ if(isset($_GET["logout"]))
 		<script type="text/javascript" src="js/search_engine.js"></script>
 
 		<!-- <script type="text/javascript" src="js/test_login.js"></script> -->
-
-		<script type="text/javascript" src="js/static_content.js"></script>
 
 		<script type="text/javascript" src="js/category_changer.js"></script>
 		
@@ -100,7 +102,6 @@ if(isset($_GET["logout"]))
 
 			<div class="search_div">				
 					<button class="search_button" id="search_button"></button>
-				</form>	
 			</div>
 		</div>
 		

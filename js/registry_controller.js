@@ -5,7 +5,7 @@ function registry()
 	{
 		var tempobj=$().add(temp_return);
 		
-        $(".category_menu_button").removeClass("search_button");
+        $(".category_menu_button").removeClass("search_button signed");
         $("#act_category").empty();
         $("#topic_box").empty();		
         $("#topic_box").hide();	
