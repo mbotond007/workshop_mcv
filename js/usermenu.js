@@ -1,7 +1,7 @@
 function usermenu_load()
 {
     
-                if(usercheck()=="")
+                if(usercheck(callback)=="")
                 {
                     load_usermenu();
                 }

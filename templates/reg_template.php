@@ -1,3 +1,4 @@
+<!doctype html>
 <div class="form_div">
 	<div>
 	<label class="label" id="regname_label" for="regname"></label>

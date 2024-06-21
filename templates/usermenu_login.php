@@ -1,3 +1,4 @@
+<!doctype html>
 <div class="usermenu">   
     <a class='menu_button_logout' id='logout_button' href='index.php?logout=1'>Kilépés</a>
     

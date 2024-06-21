@@ -1,3 +1,4 @@
+<!doctype html>
 <div class="form_div">
 	<div>
 	<label class="label" id="loginemail_label" for="loginemail"></label>
