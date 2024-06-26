@@ -23,8 +23,7 @@ function show_topics(answer,language)
     $("#topic_box").show();
     $("#content_box").empty();
 
-    var actCateg_lang="actCateg_"+language;
-    var actCateg=localStorage.getItem(actCateg_lang);
+    var actCateg=JSON.parse(localStorage.getItem("actCat"))["category_name_"+language];
    
 
     $('<div class="topic_label"><div class="topic" style="cursor:default" id="topic_label1"></div> <div class="topic" style="color:red; cursor:default">'+actCateg+

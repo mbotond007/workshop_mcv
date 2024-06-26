@@ -23,10 +23,9 @@ function list_categories(answer,language)
 
     $.each(answer, function(idx, item)
     {
-        if (language=="hun"){var category_name=item.category_name_hun}
-        else if (language=="eng"){var category_name=item.category_name_eng}
+        var category_name= "category_name_"+language;
 
-        var categ_obj=$("<div class='category_menu_button' id='cat_"+item.category_id+"'>"+category_name+"</div>");
+        var categ_obj=$("<div class='category_menu_button' id='cat_"+item.category_id+"'>"+item[category_name]+"</div>");
 
         categ_obj.appendTo($("#category_menu_inside"));
 
@@ -35,8 +34,7 @@ function list_categories(answer,language)
         categ_obj.click(
             function()
             {
-                localStorage.setItem("actCateg_hun", item.category_name_hun); 
-                localStorage.setItem("actCateg_eng", item.category_name_eng); 
+                localStorage.setItem("actCat", JSON.stringify(item));
 
                 $("#act_category").html($(this).data("catid"));
 
