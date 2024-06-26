@@ -30,10 +30,6 @@ function show_topics(answer,language)
     $('<div class="topic_label"><div class="topic" style="cursor:default" id="topic_label1"></div> <div class="topic" style="color:red; cursor:default">'+actCateg+
     '</div> <div class="topic" id="topic_label2" style="cursor:default"></div></div><br>').appendTo($("#topic_box"));
 
-    
-
-    $('<div class="topic_label"><div class="topic" style="cursor:default" id="topic_label1"></div> <div class="topic" style="color:red; cursor:default">'+$("#cat_"+$("#act_category").html()).html()+
-    '</div> <div class="topic" id="topic_label2" style="cursor:default"></div></div><br>').appendTo($("#topic_box"));
 
     content_return( $("#act_language").html()); 
 
