@@ -8,22 +8,25 @@ function category_menu(language)
             ,
             type:"POST" 
             ,
-            data:{"language":language}
+            data:{}
             ,
             success:function(answer)	
                 {
-                    list_categories(answer);                   
+                    list_categories(answer,language);                   
                 }
         });
 }
 
-function list_categories(answer)
+function list_categories(answer,language)
 {
     $("#category_menu_inside").empty();
 
     $.each(answer, function(idx, item)
     {
-        var categ_obj=$("<div class='category_menu_button' id='cat_"+item.category_id+"'>"+item.category+"</div>");
+        if (language=="hun"){var category_name=item.category_name_hun}
+        else if (language=="eng"){var category_name=item.category_name_eng}
+
+        var categ_obj=$("<div class='category_menu_button' id='cat_"+item.category_id+"'>"+category_name+"</div>");
 
         categ_obj.appendTo($("#category_menu_inside"));
 
@@ -32,6 +35,9 @@ function list_categories(answer)
         categ_obj.click(
             function()
             {
+                localStorage.setItem("actCateg_hun", item.category_name_hun); 
+                localStorage.setItem("actCateg_eng", item.category_name_eng); 
+
                 $("#act_category").html($(this).data("catid"));
 
                 $(".category_menu_button").removeClass("search_button signed");

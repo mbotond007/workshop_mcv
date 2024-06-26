@@ -2,16 +2,7 @@
 
 include("../connect.php");
 
-if(!isset($_POST["language"]))
-{
-	$act_lang="hun";
-}
-else
-{
-	$act_lang=$_POST["language"];
-}
-
-$result=$connection->query("select category_id, category_name_".$act_lang." as 'category' from category");
+$result=$connection->query("select category_id, category_name_hun, category_name_eng from category");
 
 $answer=array();
 

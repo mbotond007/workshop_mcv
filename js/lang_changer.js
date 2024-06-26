@@ -8,6 +8,8 @@ $(document).ready(
                 $("#flag_hun").addClass("signed");
                 
                 usermenu_load();
+                
+                localStorage.clear();
 
                 content_return( $("#act_language").html());
 
