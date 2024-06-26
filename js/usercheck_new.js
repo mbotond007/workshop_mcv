@@ -1,8 +1,3 @@
-function callback(str)
-    {  
-        return str;
-    }
-
 function usercheck2(func)
 {
     
@@ -20,9 +15,9 @@ function usercheck2(func)
             {
                //uname=answer.username; 
               
-               return func(answer.username);    
+            func(answer);
+                 
             }
         });
       
 }
-

@@ -7,7 +7,7 @@ $(document).ready(
 
                 $("#flag_hun").addClass("signed");
                 
-                usermenu_load();
+                usercheck2(usermenu_load);
                 
                 localStorage.clear();
 

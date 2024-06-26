@@ -34,8 +34,8 @@ if(isset($_GET["logout"]))
 
 		<script type="text/javascript" src="js/static_content.js"></script>
 		
-		<script type="text/javascript" src="js/usercheck.js"></script>
-		<script type="text/javascript" src="js/usercheck_copy.js"></script>
+		<!-- <script type="text/javascript" src="js/usercheck.js"></script> -->
+		<script type="text/javascript" src="js/usercheck_new.js"></script>
 
 		<script type="text/javascript" src="js/search_button.js"></script>
 

@@ -100,7 +100,7 @@ function login_validation(form)
                         //alert("Belépve:"+answer.username);
                         $("#content_box").empty();
 						$("<DIV class='failure_box err_box' id='login_success'></DIV>").appendTo( $("#content_box") );
-                        usermenu_load();
+                        usercheck2(usermenu_load);
                         
                     }   
 				}

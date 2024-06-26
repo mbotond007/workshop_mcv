@@ -1,17 +1,19 @@
-function usermenu_load()
+function usermenu_load(arr)
 {
-    
-                if(usercheck(callback)=="")
-                {
-                    load_usermenu();
-                }
-                else
-                {
-                    load_usermenu_login(usercheck());
-                }
-    
+        console.log(arr.username);        
+        if(arr.username=="")
+        {
+            load_usermenu();
+        }
+        else
+        {
+            load_usermenu_login(arr.username);
+        }
+
 
 }
+
+
 
 function load_usermenu()
     {
