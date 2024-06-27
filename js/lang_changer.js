@@ -27,7 +27,7 @@ $(document).ready(
 
                 $("#search_topic").val("");
 
-                category_menu($(this).data("language"));
+                list_categories($(this).data("language"));
 
                 $("#act_language").html($(this).data("language"));
 

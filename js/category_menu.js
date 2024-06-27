@@ -12,40 +12,46 @@ function category_menu(language)
             ,
             success:function(answer)	
                 {
-                    list_categories(answer,language);                   
+                    localStorage.setItem("categList", JSON.stringify(answer));   
+                    list_categories(language);                   
                 }
         });
 }
 
-function list_categories(answer,language)
+function list_categories(language)
 {
     $("#category_menu_inside").empty();
 
-    $.each(answer, function(idx, item)
-    {
-        var category_name= "category_name_"+language;
+    var categoryList=JSON.parse(localStorage.getItem("categList"));
 
-        var categ_obj=$("<div class='category_menu_button' id='cat_"+item.category_id+"'>"+item[category_name]+"</div>");
+   for(const elem of categoryList)
+        {
+            var category_name= "category_name_"+language;
 
-        categ_obj.appendTo($("#category_menu_inside"));
-
-        categ_obj.data("catid",item.category_id);
+            console.log(elem[category_name]);
         
-        categ_obj.click(
-            function()
-            {
-                localStorage.setItem("actCat", JSON.stringify(item));
+            var categ_obj=$("<div class='category_menu_button' id='cat_"+elem["category_id"]+"'>"+elem[category_name]+"</div>");
+           
+            categ_obj.appendTo($("#category_menu_inside"));
 
-                $("#act_category").html($(this).data("catid"));
-
-                $(".category_menu_button").removeClass("search_button signed");
-       
-                $(this).addClass("search_button signed");        
-                
-                topics_by_category($(this).data("catid"), $("#act_language").html());
-            }
-        );
-    });
+            categ_obj.data("catid",elem["category_id"]);
+            
+            categ_obj.click(function()
+                {
+                    $("#act_category").html($(this).data("catid"));
+        
+                    localStorage.setItem("actCat", JSON.stringify(elem));
+                    
+                    var actCat= JSON.parse(localStorage.getItem("actCat"));            
+    
+                    $(".category_menu_button").removeClass("search_button signed");
+           
+                    $(this).addClass("search_button signed");        
+                    
+                    topics_by_category($(this).data("catid"), $("#act_language").html());
+                });
+        
+        }
 
     if($("#act_category").html()!="")
         {
