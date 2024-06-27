@@ -26,7 +26,7 @@ function load_usermenu()
             
             tempobj.appendTo( $("#main_menu_right") );
             
-            content_return( $("#act_language").html());
+            show_content( $("#act_language").html());
 
             tempobj.find("#reg_button").click(
             function()
@@ -53,7 +53,7 @@ function load_usermenu_login(user)
             
             tempobj.appendTo( $("#main_menu_right") );
 
-            content_return( $("#act_language").html());
+            show_content( $("#act_language").html());
 
             tempobj.find("#username").html(user);
             

@@ -12,31 +12,39 @@ function content_return(language)
             ,
             success:function(answer)	
             {
-               show_content(answer);
+                localStorage.setItem("contentList", JSON.stringify(answer)); 
+                show_content(language);
             }
         });
 }
 
-function show_content(answer)
+function show_content(language)
 {
-    $.each(answer, function(idx, item)
+    var contentList=JSON.parse(localStorage.getItem("contentList"));
+
+    console.log(contentList);
+
+    var content= "content_"+language;
+
+    for(const elem of contentList)
     {
-        if(item.container_type=="html")
+        if(elem.container_type=="html")
         {
-            $("#"+item.container_id).html(item.content);
+            $("#"+elem.container_id).html(elem[content]);
         }
-        else if(item.container_type=="input")
+        else if(elem.container_type=="input")
         {
-            $("#"+item.container_id).attr("placeholder", item.content);
+            $("#"+elem.container_id).attr("placeholder", elem[content]);
         }
-        else if(item.container_type=="img")
+        else if(elem.container_type=="img")
         {
-            $("#"+item.container_id).attr("src", item.content);
+            $("#"+elem.container_id).attr("src", elem[content]);
         }
-        else if(item.container_type=="submit")
+        else if(elem.container_type=="submit")
         {
-            $("#"+item.container_id).val(item.content);
+            $("#"+elem.container_id).val(elem[content]);
         }
         
-    });  
+        
+    }
 }  

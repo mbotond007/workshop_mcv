@@ -13,7 +13,7 @@ function login()
 		
 		tempobj.appendTo( $("#content_box") );
 
-        content_return( $("#act_language").html());
+        show_content( $("#act_language").html());
 		
 		tempobj.find("#loginsubmit").click(
 		function()
@@ -49,7 +49,7 @@ function logincheck(form)
 				failure=true;
 			}
 		}
-	content_return( $("#act_language").html());	
+	show_content( $("#act_language").html());	
 
     return !failure;    
 }
@@ -85,12 +85,12 @@ function login_validation(form)
                     if(answer.login_error_1=="1")
                         {
                             $("<DIV class='failure_box err_box' id='loginerror1'></DIV>").appendTo( $("#content_box") );
-							content_return( $("#act_language").html());
+							show_content( $("#act_language").html());
                         }
                     if(answer.login_error_2=="1")
                         {
                             $("<DIV class='failure_box err_box' id='loginerror2'></DIV>").appendTo( $("#content_box") );
-							content_return( $("#act_language").html()); 
+							show_content( $("#act_language").html()); 
                         }
 					
 					

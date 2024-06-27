@@ -13,7 +13,7 @@ function registry()
 		
 		tempobj.appendTo( $("#content_box") );
 
-        content_return( $("#act_language").html());
+        show_content( $("#act_language").html());
 		
 		tempobj.find("#regsubmit").click(
 		function()
@@ -63,7 +63,7 @@ function regcheck(form)
            
         }
 
-    content_return( $("#act_language").html());
+    show_content( $("#act_language").html());
         
     return !failure;    
 }
@@ -113,7 +113,7 @@ function registry_validation(form)
                         $("<DIV class='failure_box err_box' id='registry_success'></DIV>").appendTo( $("#content_box") );
                         }
                        
-                    content_return( $("#act_language").html()); 
+                    show_content( $("#act_language").html()); 
 				}
 			}
 		 );

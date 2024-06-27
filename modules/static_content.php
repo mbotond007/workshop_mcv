@@ -1,18 +1,7 @@
 <?php
 include("../connect.php");
 
-if($_POST["language"]=="")
-{
-	$act_lang="hun";
-}
-else
-{
-	$act_lang=$_POST["language"];
-}
-
-
-
-$result=$connection->query("select container_id, container_type, content_".$act_lang." as 'content'  from containers");
+$result=$connection->query("select container_id, container_type, content_hun, content_eng  from containers");
 
 $answer=array();
 

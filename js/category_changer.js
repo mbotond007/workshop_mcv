@@ -32,7 +32,7 @@ function show_topics(language)
     '</div> <div class="topic" id="topic_label2" style="cursor:default"></div></div><br>').appendTo($("#topic_box"));
 
 
-    content_return( $("#act_language").html()); 
+    show_content( $("#act_language").html()); 
 
     for(const elem of topicList)
         {

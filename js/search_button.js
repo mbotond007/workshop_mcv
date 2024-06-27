@@ -14,7 +14,7 @@ $(document).ready(
 
             $("<input type='text' placeholder='' name='search_topic' id='search_topic'>").appendTo( $(".search_box") );
 			
-            content_return( $("#act_language").html()); 
+            show_content( $("#act_language").html()); 
 
             search_engine();
         });

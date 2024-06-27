@@ -5,13 +5,13 @@ $(document).ready(
             {
                 $("#act_language").html("hun");
 
-                $("#flag_hun").addClass("signed");
-                
-                usercheck2(usermenu_load);
+                $("#flag_hun").addClass("signed");      
                 
                 localStorage.clear();
 
                 content_return( $("#act_language").html());
+
+                usercheck2(usermenu_load);
 
                 category_menu($("#act_language").html());
             }
@@ -36,7 +36,7 @@ $(document).ready(
                     show_topics($("#act_language").html());
                 }
                     
-                content_return( $(this).data("language"));
+                show_content( $(this).data("language"));
             }
         );
     });
