@@ -33,7 +33,7 @@ $(document).ready(
 
                 if($("#act_category").html()!="")
                 {
-                    topics_by_category($("#act_category").html(), $("#act_language").html());
+                    show_topics($("#act_language").html());
                 }
                     
                 content_return( $(this).data("language"));

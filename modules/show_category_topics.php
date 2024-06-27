@@ -3,9 +3,7 @@ include("../connect.php");
 
 $cat_id=$_POST["category_id"];
 
-$act_lang=$_POST["language"];
-
-$st=$connection->prepare("select topic.topic_id, topic.topic_name_".$act_lang." as 'topic_name' from topic inner join category_topic
+$st=$connection->prepare("select topic.topic_id, topic.topic_name_hun, topic.topic_name_eng from topic inner join category_topic
 						on category_topic.topic_id=topic.topic_id inner join category
 						on category.category_id=category_topic.category_id 
 						where category.category_id = ?");
